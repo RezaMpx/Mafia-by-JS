@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مافیا</title>
+    <style>
+        body {
+            width: 1000px;
+        }
+        
+        li {
+            list-style: none
+        }
+        
+        #editor {
+            display: flex;
+            padding: 8px;
+        }
+        
+        .aa {
+            display: flex;
+            width: 700px;
+            background-color: #1111;
+            border: 3px solid #888;
+        }
+        
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li[id*="a"] {
+            background-color: #1111;
+            border-bottom: 1px solid #888;
+            border-left: 1px solid #888;
+            padding: 5px 0 5px 8px;
+            width: 93%;
+        }
+        
+        #w5 {
+            width: 100%;
+        }
+        
+        .w1 {
+            width: 34%;
+        }
+        
+        .w2 {
+            width: 65%;
+        }
+        
+        .w3 {
+            width: 30%;
+        }
+        
+        .w4 {
+            width: 70%
+        }
+        
+        th,
+        td {
+            margin: 0;
+            padding: 6px;
+            border: none;
+        }
+        
+        td,
+        th {
+            max-width: 100px;
+            overflow: hidden;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aa">
+        <div class="e1">
+            <div id="editor">
+                <div>
+                    <input type="text" name="" id="name" class="w2" placeholder="نام" />
+                    <button class="w3" onclick="A()"> افضودن </button>
+                    <input type="text" name="" id="edi" class="w2" placeholder="ویــرایـش" />
+                    <button class="w3" onclick="C()">پـاک کردن</button>
+                    <input size="5" type="number" name="" id="ned" class="w1" />
+                    <button class="w3" onclick="E()">ویـرایش</button>
+                    <button onclick="R()" class="w3">حذف شماره</button><br>
+                    <span id="span"> تـعداد : 0 (شماره بعدی: 1)</span>
+                </div>
+            </div>
+            <div>
+                <ul id="sel"></ul>
+            </div>
+        </div>
+        <div class="w4">
+            <table id="w5">
+                <thead>
+                    <tr>
+                        <th>کد</th>
+                        <th>شهروند</th>
+                        <th>مافیا</th>
+                        <th>نقش سیاه</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var a = g('sel'); //ul
+        var btn = g('btn'); //add
+        var int = 0;
+        var user = 0
+        var aa = g('span')
+
+        function A() { // Add
+            // if (int > 26) {
+            //     alert('بیشتر از 27 نفر نمیتوانید اضافه کنید')
+            //   return 0
+            //}
+            int++
+            var name = v('name') //name
+            a.innerHTML += '<li id=\"a' + int + '\">' + int + ' - ' + name +
+                ' - <input type=\"number\" size=\"3\" id=\"gh' + int + '\" ></input></li>'
+                //added name & id
+            g('name').value = ''; //zeroed or zeroing
+            user++
+            aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (int + 1) + ')'
+        }
+
+        function R() { // Remove
+            var rem = v('ned') // input remove
+            rem = 'a' + rem; // get id
+            g(rem).remove() // removed!
+            user--
+            aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (int + 1) + ')'
+        }
+
+        function E() { // Edit
+            var ned = v('ned') // get num
+            nedd = 'a' + ned; // get id
+            g(nedd).innerHTML = ned + ' - ' + v('edi') + ' - ' +
+                '<input type="number" size="3" id="gh' + ned + '"></input>'
+        }
+
+        function C() {
+            g('edi').value = ''
+        }
+
+        function v(val) {
+            var a = document.getElementById(val).value; //name
+            return a
+        }
+
+        function g(val) {
+            var a = document.getElementById(val) //name
+            return a
+        }
+    </script>
+    <section class="section oa-dl">
+        <progress id="c" value="" max="100" style="width:0%; background-color: blue;"></progress>
+        <script>
+            var c = document.getElementById('c');
+            var a = 100;
+            var b = 0;
+            var q = 0;
+            var w = 0;
+
+            function pp() {
+                a++
+            }
+            var f = setInterval(function aa() {
+                var e = new Date()
+
+                w++
+                if (a > 0 && q < 100) {
+                    a--;
+                    if (a == 0) {
+                        q += 100
+                    }
+                } else if (q >= 100) {
+                    a++
+                    q++
+                    if (q > 200) {
+                        q = 0
+                    }
+                }
+                c.setAttribute("style", "width:" + a + "%;")
+                c.setAttribute("value", a)
+            }, 188 /*8*/ );
+        </script>
+
+    </section>
+</body>
+
+</html>
