@@ -65,9 +65,9 @@
 
     <script>
         var a = g('sel'); //ul
-        var btn = g('btn'); //add
-        var int = 0;
-        var user = 0
+        var btn = g('btn'); //add btn
+        var int = 0; // for set ID
+        var user = 0 //Show the number of players
         var aa = g('span')
 
         function A() { // Add
@@ -93,60 +93,26 @@
             aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (int + 1) + ')'
         }
 
-        function E() { // Edit
+        function E() { // for Edit
             var ned = v('ned') // get num
             nedd = 'a' + ned; // get id
             g(nedd).innerHTML = ned + ' - ' + v('edi') + ' - ' +
                 '<input type="number" size="3" id="gh' + ned + '"></input>'
         }
-
+        /// Empty an input
         function C() {
             g('edi').value = ''
         }
-
+        /// Get the value of an element
         function v(val) {
             var a = document.getElementById(val).value; //name
             return a
         }
-
+        ///  get an element
         function g(val) {
             var a = document.getElementById(val) //name
             return a
         }
     </script>
-    <section class="section oa-dl">
-        <progress id="c" value="" max="100" style="width:0%; background-color: blue;"></progress>
-        <script>
-            var c = document.getElementById('c');
-            var a = 100;
-            var b = 0;
-            var q = 0;
-            var w = 0;
-
-            function pp() {
-                a++
-            }
-            var f = setInterval(function aa() {
-                var e = new Date()
-
-                w++
-                if (a > 0 && q < 100) {
-                    a--;
-                    if (a == 0) {
-                        q += 100
-                    }
-                } else if (q >= 100) {
-                    a++
-                    q++
-                    if (q > 200) {
-                        q = 0
-                    }
-                }
-                c.setAttribute("style", "width:" + a + "%;")
-                c.setAttribute("value", a)
-            }, 188 /*8*/ );
-        </script>
-
-    </section>
 </body>
 </html>
