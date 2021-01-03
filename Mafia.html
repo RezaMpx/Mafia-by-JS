@@ -36,11 +36,14 @@
                 <div>
                     <input type="text" name="" id="name" class="w2" placeholder="نام" />
                     <button class="w3" onclick="A()"> افضودن </button>
+                    
                     <input type="text" name="" id="edi" class="w2" placeholder="ویــرایـش" />
                     <button class="w3" onclick="C()">پـاک کردن</button>
+                    
                     <input size="5" type="number" name="" id="ned" class="w1" />
                     <button class="w3" onclick="E()">ویـرایش</button>
                     <button onclick="R()" class="w3">حذف شماره</button><br>
+                    
                     <span id="span"> تـعداد : 0 (شماره بعدی: 1)</span>
                 </div>
             </div>
@@ -103,11 +106,13 @@
         function C() {
             g('edi').value = ''
         }
+        
         /// Get the value of an element
         function v(val) {
             var a = document.getElementById(val).value; //name
             return a
         }
+        
         ///  get an element
         function g(val) {
             var a = document.getElementById(val) //name
