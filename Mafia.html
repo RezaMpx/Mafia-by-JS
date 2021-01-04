@@ -96,7 +96,7 @@
                 ' - <input type=\"number\" size=\"3\" id=\"gh' + num + '\" ></input></li>'
                 //added name & id
             g('name').value = ''; //zeroed or zeroing
-            user++
+            user++;
             aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (num + 1) + ')'
         }
 
@@ -104,7 +104,7 @@
             var rem = v('ned') // input remove
             rem = 'a' + rem; // get id
             g(rem).remove() // removed!
-            user--
+            user--;
             aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (num + 1) + ')'
         }
 
@@ -116,19 +116,19 @@
         }
         /// Empty an input
         function C() {
-            g('edi').value = ''
+            g('edi').value = '';
         }
         
         /// Get the value of an element
         function v(val) {
             var a = document.getElementById(val).value; //name
-            return a
+            return a;
         }
         
         ///  get an element
         function g(val) {
             var a = document.getElementById(val) //name
-            return a
+            return a;
         }
     </script>
 </body>
