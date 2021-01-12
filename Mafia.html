@@ -68,59 +68,6 @@
         </div>
     </div>
 
-    <script>
-        var a = g('sel'); //ul
-        var btn = g('btn'); //add btn
-        var num = 0; // for set ID
-        var user = 0 //Show the number of players
-        var aa = g('span')
-
-        function A() { // Add
-            // if (int > 26) {
-            //     alert('بیشتر از 27 نفر نمیتوانید اضافه کنید')
-            //   return 0
-            //}
-            num++
-            var name = v('name') //name
-            a.innerHTML += '<li id=\"a' + num + '\">' + num + ' - ' + name +
-                ' - <input type=\"number\" size=\"3\" id=\"gh' + num + '\" ></input></li>'
-                //added name & id
-            g('name').value = ''; //zeroed or zeroing
-            user++;
-            aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (num + 1) + ')'
-        }
-
-        function R() { // Remove
-            var rem = v('ned') // input remove
-            rem = 'a' + rem; // Get Id
-            g(rem).remove() // removed!
-            user--;
-            aa.innerText = 'تعداد : ' + user + ' (شماره بعدی: ' + (num + 1) + ')'
-        }
-
-        function E() { // for Edit
-            var ned = v('ned') // get num
-            nedd = 'a' + ned; // get id
-            g(nedd).innerHTML = ned + ' - ' + v('edi') + ' - ' +
-                '<input type="number" size="3" id="gh' + ned + '"></input>'
-        }
-        /// Empty an input
-        function C() {
-            g('edi').value = '';
-        }
-        
-        /// Get the value of an element
-        function v(val) {
-            var a = document.getElementById(val).value; //name
-            return a;
-        }
-        
-        ///  get an element
-        function g(val) {
-            var a = document.getElementById(val) //name
-            return a;
-        }
-    </script>
 </body>
 </html>
 
