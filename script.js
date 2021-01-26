@@ -4,3 +4,5 @@ var int = 0;
 var user = 0
 var aa = G('span')
 function A() { // Add
+    // if (int > 26) {
+
