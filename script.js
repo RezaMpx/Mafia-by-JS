@@ -12,7 +12,7 @@ function A() { // Add
 // var i =10000;
 // var iw = i/1000;
 // var it = iw + i;
-//
+// var wt = iw - it;
 //12345
 //12345
 //12345
