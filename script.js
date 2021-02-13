@@ -11,7 +11,7 @@ function A() { // Add
     int++
 // var i =10000;
 // var iw = i/1000;
-//
+// var it = iw + i;
 //
 //12345
 //12345
