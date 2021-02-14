@@ -13,6 +13,6 @@ function A() { // Add
 // var iw = i/1000;
 // var it = iw + i;
 // var wt = iw - it;
-// var gl = it
+// var gl = it + wt;
 //12345
 //12345
