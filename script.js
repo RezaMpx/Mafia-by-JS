@@ -14,6 +14,6 @@ function A() { // Add
 // var it = iw + i;
 // var wt = iw - it;
 // var gl = it + wt;
-alert
+alert(gl)
 //12345
 //12345
