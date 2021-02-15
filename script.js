@@ -16,4 +16,4 @@ function A() { // Add
 // var gl = it + wt;
 alert(gl);
 //123
-//1234
+//123
