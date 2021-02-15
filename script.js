@@ -16,4 +16,4 @@ function A() { // Add
 // var gl = it + wt;
 alert(gl);
 //12345
-//12345
+//1234
