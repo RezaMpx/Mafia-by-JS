@@ -15,5 +15,5 @@ function A() { // Add
 // var wt = iw - it;
 // var gl = it + wt;
 alert(gl);
-//1
+//
 //
