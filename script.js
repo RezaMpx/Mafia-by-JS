@@ -6,7 +6,7 @@ var aa = G('span')
 function A() { // Add
     // if (int > 26) {
     //     alert('بیشتر از 27 نفر نمیتوانید اضافه کنید')
-    //   return 0
+    //   return 0;
     //}
     int++
 var i =10000;
