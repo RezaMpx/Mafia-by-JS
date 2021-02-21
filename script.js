@@ -16,4 +16,4 @@ var i =10000;
 // var gl = it + wt;
 alert(gl);
 //
-//
+//۵
