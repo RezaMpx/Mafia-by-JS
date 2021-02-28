@@ -10,7 +10,7 @@ function A() { // Add
     //}
     int++
 var i =10000;
-// var iw = i/1000;
+ var iw = i/1000;
 // var it = iw + i;
 // var wt = iw - it;
 // var gl = it + wt;
