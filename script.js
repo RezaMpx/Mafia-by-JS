@@ -1,5 +1,4 @@
 var a = G('sel'); //ul
-var btn = G('btn');
  
 var i =10000;
  var iw = i/1000;
