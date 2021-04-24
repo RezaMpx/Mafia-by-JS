@@ -1,4 +1,5 @@
 var a = G('sel'); //ul
+ var a = G('sel'); //ul
  
 var a = G('sel'); //ul
  var i =10000;var a = G('sel'); //ul
