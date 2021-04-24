@@ -1,6 +1,7 @@
 var a = G('sel'); //ul
  
-var i =10000;var a = G('sel'); //ul
+var a = G('sel'); //ul
+ var i =10000;var a = G('sel'); //ul
  
  var iw = i/1000;
  var it = iw + i;
