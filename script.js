@@ -1,5 +1,4 @@
 var a = G('sel'); //ul
- var a = G('sel'); //ul
  
 var a = G('sel'); //ul
  var it = iw + i;
